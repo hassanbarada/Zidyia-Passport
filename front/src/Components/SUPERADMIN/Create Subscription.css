@@ -1,0 +1,119 @@
+.create-subscription-container{
+   
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-area: main;
+    background-color:#2D3741; 
+}
+.create-subscription-container form{
+    
+    background-color:#3a424a;
+    height: fit-content;
+    width: 500px;    
+    margin: 20px;
+    padding: 20px 50px;
+    border-radius: 15px;
+    
+}
+
+.create-subscription-container form .create-subscription-container-form-container label{
+    font-size: larger;
+    text-align: start;
+    color:#5DD3B3;
+}
+.createsubscriptionh1{
+    color:#5DD3B3;
+}
+
+.create-subscription-container form .create-subscription-container-form-container input{
+    font-size: larger;
+    border: 1px solid #ddd;
+    background-color:#2D3741;
+    border-radius: 1.5635rem;
+    height: 30px;
+    padding: 10px;
+    outline:none;
+    color:rgb(203, 195, 195);
+    margin: 4px;
+}
+.create-subscription-container form .create-subscription-container-form-container input::placeholder{
+    color:rgb(151, 151, 151);
+    padding-left:10px ;
+}
+.designselect{
+    border: 1px solid #ddd;
+    background-color:#2D3741;
+    border-radius: 1.5635rem;
+    height: 50px;
+    padding-left: 12px;
+    outline:none;
+   
+    color:rgb(151, 151, 151);
+    margin: 4px;
+}
+
+.create-subscription-container form button{
+    margin-top: 30px;
+    background-color: #5DD3B3;
+    border: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    width: 150px;
+}
+
+.create-subscription-container form button:active{
+    transform: scale(0.9);
+}
+
+.error-message{
+    color: red;
+    font-size: large;
+}
+.create-subscription-container-form-container{
+    display: grid;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.create-subscription-container-form-container select{
+    font-size: larger;
+
+}
+
+@media (max-width:650px) {
+    
+    .create-subscription-container form{
+        width: 250px;    
+        margin: 0px;
+        margin-top: 60px;
+        padding: 20px;
+    }
+    .createsubscriptionh1{
+font-size: 25px;
+    }
+    .create-subscription-container form .create-subscription-container-form-container input{
+        height: 20px;
+        padding: 8px;
+        margin: 0px;
+        margin-top: 4px;
+    }
+    .create-subscription-container form .create-subscription-container-form-container label{
+        font-size: 15px;
+    }
+    .create-subscription-container form .create-subscription-container-form-container input::placeholder{
+        font-size: 15px;
+    }
+    .create-subscription-container-form-container select{
+        font-size: 15px;
+    
+    }
+    .designselect{
+       
+        height: 40px;
+        
+    }
+       }

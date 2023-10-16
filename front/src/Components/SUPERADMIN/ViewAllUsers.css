@@ -1,0 +1,168 @@
+.tableparent{
+    grid-area: main;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#2D3741; 
+   
+}
+
+.content-table {
+
+    border-collapse: collapse;
+    margin-top: 50px;
+    font-size: x-large;
+    width: 95%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+}
+
+.content-table thead tr {
+    background-color: #5DD3B3;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 12px;
+}
+.content-table td{
+    text-align: center;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr {
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:nth-child(even) {
+    background-color: #e1e0e0;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 4px solid #5DD3B3;
+}
+.blockicon{
+    color:red;
+    font-size: 28px;
+}
+.blockicon:hover{
+   cursor: pointer;
+}
+
+.modal {
+    /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgba(71, 78, 93, 0.3);
+   padding-top: 50px;
+ }
+ 
+ /* Modal Content/Box */
+ .modal-content {
+   background-color: #fefefe;
+   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+   border: 1px solid #888;
+   width: 40%; /* Could be more or less, depending on screen size */
+   border-radius: 10px;
+ }
+ 
+ /* Style the horizontal ruler */
+ hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+ }
+  
+ /* The Modal Close Button (x) */
+ .close {
+   position: absolute;
+   right: 35px;
+   top: 15px;
+   font-size: 40px;
+   font-weight: bold;
+   color: #f1f1f1;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #f44336;
+   cursor: pointer;
+ }
+
+ .cancelbtn, .blockbtn,.unblokbtn {
+    height: 40px;
+    border: none;
+      width: 20%;
+      border-radius: 5px;
+      margin: 10px;
+    }
+    .blockbtn{
+        background-color: red;
+    }
+    .blockbtn,.unblokbtn:hover{
+       cursor: pointer;
+    }
+    .unblockicon{
+        color:green;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .unblokbtn{
+        background-color: green;
+    }
+
+
+    @media (max-width:480px) {
+    
+        .content-table {
+            border-collapse: collapse;
+            margin: 100px 0px;
+            font-size: 0;
+            width: 25%;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            height: 250px;
+        }
+        .content-table tbody tr {
+            font-size: 12px;
+        }
+        .content-table th{
+            font-size: 12px;
+            height: 35px;
+        }
+        .content-table th,
+        .content-table td {
+            padding: 2px 2px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 65%; /* Could be more or less, depending on screen size */
+            border-radius: 10px;
+          }
+          .cancelbtn, .blockbtn,.unblokbtn{
+            width:fit-content;
+          }
+          .blockicon{
+            
+            font-size: 20px;
+        }
+        .unblockicon{
+         
+            font-size: 25px;
+        }
+      }

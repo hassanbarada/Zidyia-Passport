@@ -1,0 +1,66 @@
+.createcertificate-admin-parent{
+    background-color: #2D3741;
+    min-height: 100vh;
+    grid-area: main;
+    overflow: hidden;
+   }
+   .createcertificate-admin-headone{
+       color:white;
+   }
+   .createcertificate-admin-contentWithform{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 150px;
+   }
+   .directiontocolumn{
+       display: flex;
+       flex-direction: column;
+   }
+      .createcertificate-admin-label{
+       margin-bottom: 3px;
+       color: white;
+   }
+   .createcertificate-admin-input{
+       width:400px;
+       border: 1px solid #ddd;
+       background-color:#2D3741;
+       border-radius: 1.5635rem;
+       height: 30px;
+       padding: 10px;
+       outline:none;
+       color:rgb(203, 195, 195);
+       margin: 4px;
+   }
+   .directiontocolumn input::placeholder{
+       color:rgb(203, 195, 195);
+   }
+   .createbutton{
+       width:50%;
+       height: 2.125rem;
+       background-color: #5DD3B3;
+       border-radius: 1.5635rem;
+       border: 0px;
+       color:white;
+       padding: 10px;
+       margin-top: 15px;
+   }
+   .centerthebutton{
+    display: flex;
+    justify-content: center;
+   }
+   .error-name-message,.error-description-message,.error-image-message{
+     color:red;
+   }
+   
+   
+   @media (max-width:650px) {
+   
+    .createcertificate-admin-input{
+        width:300px;
+    }
+    .createbutton{
+        margin-top: 25px;
+    }
+       }

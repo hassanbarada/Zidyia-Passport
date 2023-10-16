@@ -1,0 +1,32 @@
+* {
+    font-family: 'Core-Bold';
+}
+body{
+    
+    background-color: white;
+    /*rgb(70, 241, 207) aqua */
+    /*#323F4E Heading*/
+    /*#46505F Text*/
+    /*Button background #5DD3B3*/
+    /* background-color #2D3741 black*/
+    /* background-color #d2faf1 */
+    /* background-color for hover #5DD3B3 */
+
+
+    /*
+    border-radius: 1.25rem;
+    background: var(--background-card, linear-gradient(180deg, #415160 0%, #293440 100%));
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    */
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr 1fr !important;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    'sidebar header header header'
+    'sidebar main main main'
+    ;
+    height: 100vh;
+}

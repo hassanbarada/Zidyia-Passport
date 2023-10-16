@@ -1,0 +1,20 @@
+.expiry-container{
+    background-color: #2d3741;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.expiry-container-content{
+    text-align: center;
+    color: #5dd3b3;
+}
+
+.expiry-container-content h1{
+    font-size: 80px;
+}
+
+.expiry-container-content h2{
+    font-size: 60px;
+}

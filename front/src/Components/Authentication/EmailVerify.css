@@ -1,0 +1,25 @@
+.email-verify-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #2D3741;
+    margin: 0;
+    padding: 0;
+}
+.email-verify-container-content{
+    text-align: center;
+
+}
+
+.email-verify-container-content h1:nth-child(1){
+    font-size: 150px;
+    color: #5DD3B3;
+}
+
+.email-verify-container-content h1{
+    font-family: 'Core-Bold';
+    font-size: 50px;
+    color: white;
+}

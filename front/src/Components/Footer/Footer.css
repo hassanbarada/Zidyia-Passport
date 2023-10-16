@@ -1,0 +1,136 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    padding-left: 100px;
+    padding-right:100px ;
+    padding-top: 50px;
+}
+
+.footer-home{
+    transform: translateY(750px);
+}
+
+.footer-credential{
+    color: white;
+}
+
+.credential-url-text {
+    color: white !important;
+}
+
+.footer-container:nth-child(1) p{
+    font-size: large;
+    color: #46505F;
+    width: 550px;
+}
+
+.footer-bottom {
+    grid-column: 1 / span 4;
+    text-align: center;
+    font-family: 'Core';
+    color: #46505F;
+    border-top: 1px solid #46505F;
+    width: 115%;
+    margin-top: 100px;
+  }
+
+.footer-container{
+    align-self:flex-start;
+}
+
+.footer-container h2{
+    font-family: 'Core-Bold';
+}
+
+.footer-container p{
+    color: #46505F;
+    font-family: 'Core';
+}
+
+.footer-container-logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 20px;
+    align-items: center;
+}
+.footer-container-logo img{
+    width: 100px;
+}
+.footer-container-logo h1{
+    margin-left: 10px;
+    font-family: 'Core-Bold';
+    color: #46505F;
+}
+
+.footer-container-social{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container-social a{
+    text-decoration: none;
+    font-size: x-large;
+    margin-right: 40px;
+}
+
+
+
+.facebook-icon {
+    color: #1877f2; /* Facebook blue color */
+  }
+  
+  .twitter-icon {
+    color: #1da1f2; /* Twitter blue color */
+  }
+  
+  .linkedin-icon {
+    color: #0077b5; /* LinkedIn blue color */
+  }
+
+  /* Responsive styles for screens up to 768px wide */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 10px;
+        padding-left: 25px;
+    }
+     .footer-container:nth-child(1){
+        grid-column: 1 / span 4;
+     }
+
+     .footer-container:nth-child(2){
+        grid-row: 2 / span 4;
+        grid-column: 0 / span 4;
+     }
+     .footer-container:nth-child(3){
+        grid-row: 2 / span 4;
+        grid-column: 3 / span 4;
+
+     }
+     
+     .footer-container:nth-child(4){
+        grid-row: 5.5 / span 4;
+        grid-column: 1 / span 4;
+        display: flex;
+     }
+     
+     .footer-container:nth-child(4) .footer-container-sub:nth-child(1){
+        transform: translateX(-70px);
+     }
+     .footer-container:nth-child(4) .footer-container-sub:nth-child(2){
+        transform: translateX(50px);
+     }
+
+
+    .footer-container:nth-child(1) p {
+        width: 350px;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .footer-container-social a {
+        margin-right: 20px;
+    }
+}

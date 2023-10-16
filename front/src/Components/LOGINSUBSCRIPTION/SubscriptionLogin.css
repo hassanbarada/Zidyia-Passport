@@ -1,0 +1,150 @@
+
+.Subscription-parent {
+  background-color: #2d3741;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "CORE";
+}
+.Subscription-contentWithform {
+          display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px; 
+ }
+
+.Subscription-headone {
+  color: white;
+}
+.directionto-column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.Subscription-label{
+  margin-bottom: 5px;
+    color: white;
+    /* font-size: 15px; */
+}
+
+.directionto-column input::placeholder{
+    color:rgb(203, 195, 195);
+}
+.inputwitheye{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.inputwitheye-Subscription-password{
+  padding-right: 1%;
+
+}
+.inputwitheye-span{
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+
+.Subscription-password {
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: #2d3741;
+  border-radius: 1.5635rem;
+  height: 7vh; /* Increase the height for better touch usability */
+  outline: none;
+  color: rgb(203, 195, 195);
+  box-sizing: border-box; 
+  padding-left: 11px;
+}
+.Subscription-email{
+    width: 100%;
+  border: 1px solid #ddd;
+  background-color: #2d3741;
+  border-radius: 1.5635rem;
+  height: 7vh; /* Increase the height for better touch usability */
+  outline: none;
+  color: rgb(203, 195, 195);
+  box-sizing: border-box; 
+    padding-left: 11px;
+
+}
+
+
+
+.Subscription-email::placeholder,
+.Subscription-password::placeholder {
+  padding-left: 10px; /* Adjust the padding value as needed */
+}
+
+.Subscriptionsubmit {
+  width: 100%;
+  background-color: #5dd3b3;
+  border-radius: 1.5635rem;
+  border: 0px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.Subscription-loginform{
+  width: 30%;
+}
+
+
+
+.Subscriptioncheckboxand-forgot {
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+
+  width: 100%;
+}
+.green-checkbox{
+  appearance: none;
+  border:2px solid white  ;
+  outline: none;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+.green-checkbox:checked{
+  background-color: #5dd3b3;
+  border-color: white;
+}
+
+.Subscriptionememberme-label {
+  color: white;
+  margin-left: 5px;
+}
+
+.Subscriptioncheckboxwith-lebel {
+  margin-bottom: 2px;
+}
+
+.Subscription-forgotpass {
+  color: #5dd3b3;
+  text-decoration: none;
+} 
+
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+.Subscription-contentWithform {
+          display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; 
+    width: 100%;
+ }
+ .Subscription-loginform{
+  width: 80%;
+}
+.Subscriptionsubmit{
+  margin-top: 400px;
+
+}
+}

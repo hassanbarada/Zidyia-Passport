@@ -1,0 +1,71 @@
+.SubscriptionsView-container{
+    grid-area: main;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#2D3741; 
+    padding-top: 50px;
+}
+
+
+
+.SubscriptionsView-container-table{
+    width: 95%;
+    text-align: center;
+    border-collapse: collapse;
+   
+    
+}
+.SubscriptionsView-container-table tbody tr:last-of-type {
+    border-bottom: 4px solid #5DD3B3;
+}
+.SubscriptionsView-container-table thead th{
+    height: 40px;
+    font-size: x-large;
+    background: #5DD3B3;
+    color: white;
+    padding: 12px 12px;
+   
+}
+.SubscriptionsView-container-table tr td{
+    height: 40px;
+    text-align: center;
+    font-size: x-large;
+    border: 1px solid lightgray;
+    padding: 12px 12px;
+}
+
+.SubscriptionsView-container-table tr:nth-child(2n){
+    background-color: #e1e0e0;
+}
+
+.SubscriptionsView-container-table tr:nth-child(2n+1){
+    background-color: #f3f3f3;
+}
+
+.renew-icon{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .SubscriptionsView-container{
+       padding: 5px;
+       width: 100%;
+    }
+    .SubscriptionsView-container-table{
+        width: 100% ;
+        padding: 10px; 
+    }
+
+
+    .SubscriptionsView-container-table thead th{
+        font-size: medium;
+    }
+    
+    .SubscriptionsView-container-table tr td{
+        font-size:small;
+    }
+}

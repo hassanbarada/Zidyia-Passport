@@ -1,0 +1,180 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../../images/building.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 600px;
+    padding: 0 10%;
+    transition: 0.1s linear;
+}
+
+.banner h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Core-Heavy';
+}
+
+.institutions-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 243, 251);
+    padding-bottom: 100px;
+}
+.institutions-container h1{
+    font-family: "Core-Heavy";
+    color: #2D3741;
+    font-size: 40px;
+    margin-top: 20;
+    margin-bottom: 50px;
+}
+
+
+
+.aboutus-section-institution{
+padding: 40px;
+}
+.aboutus-section-institution .aboutus-section-content2 .aboutus-section-content2-left{
+    color: #2D3741;
+}
+.aboutus-section-institution h1{
+    color: aqua;
+}
+
+
+.parents-container{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.parents-container .red {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  
+  
+  .parents-container .card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 20px;
+    height: 300px;
+    width: 30%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms;
+    word-break: break-all;
+  }
+
+  .parents-container .card .buttons-container{
+    display: flex;
+    justify-content: space-between ;
+    margin-left: 25px;
+    width: 80%;
+    margin-top: 20px;
+  }
+  .parents-container .card .buttons-container button{
+    padding: 5px;
+    border: 1px solid #2D3741;
+    border-radius: 10px;
+    font-size: larger;
+    background-color: transparent;
+    color: #2D3741;
+    transition: all ease 300ms;
+  }
+  .parents-container .card .buttons-container button a{
+    text-decoration: none;
+    color: #2D3741;
+  }
+
+  .parents-container .card .buttons-container button:hover a{
+    color: aqua;
+  }
+
+  .parents-container .card .buttons-container button:hover{
+   background-color:#2D3741;
+   border: transparent;
+   color: aqua;
+  }
+
+  .parents-container .card .buttons-container button svg{
+    margin-right: 10px;
+  }
+  .parents-container .card .buttons-container button svg.third{
+    margin-right: 0;
+    margin-left: 5px;
+    transform: translateY(10px);
+  }
+  
+  .parents-container .card h1.tip {
+   margin-bottom: 10px;
+   color: #2D3741;
+
+  }
+  
+  .parents-container .card h3.second-text {
+    color: #2D3741;
+
+  }
+  
+  .parents-container .card:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.9);
+
+  }
+  
+  .parents-container:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+  .view-all-button{
+    background-color: lightgray;
+    padding: 10px;
+    font-size: large;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    border: transparent;
+    width: 10%;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all ease 300ms;
+  }
+  .view-all-button:hover{
+    background-color: transparent;
+    color: #2D3741;
+    border: 0.5px solid #2D3741;
+  }
+
+  @media screen and (max-width: 768px) {
+    .parents-container{
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 20px;
+        gap: 20px;
+    }
+    .parents-container .card{
+        width: 90%;
+    }
+    .parents-container .card .buttons-container{
+        width: 95%;
+        margin-left: 0;
+    }
+    .view-all-button{
+      width: 30%;
+    }
+    .institutions-container>h1{
+      margin-left: 10px;
+    }
+  }

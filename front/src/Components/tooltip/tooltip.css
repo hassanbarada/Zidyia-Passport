@@ -1,0 +1,32 @@
+/* Tooltip container */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+  
+  /* Tooltip text */
+  .tooltip {
+    visibility: hidden;
+    width: 10rem;
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    /* bottom: 125%; Position above the element */
+    left: 5%;
+    top: 120%;
+    transform: translateX(-50%); /* Center horizontally */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s; /* Fade-in effect */
+  }
+  
+  /* Show the tooltip on hover */
+  .tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  

@@ -1,0 +1,169 @@
+.customizable-form-container{
+   grid-area: main;
+   overflow-y: auto;
+    padding: 20px 20px;
+    background-color: #2D3741;
+    color: white;
+}
+
+.customizable-form-container h1{
+    font-family: "Core-Bold";
+
+}
+
+
+.customizable-form-container-header .error-message{
+    color: red;
+    font-size: large;
+}
+
+.customizable-form-container-header {
+    font-family: "Core-Bold";
+   
+}
+
+.customizable-form-container-table{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    text-align: center;
+    border-collapse: collapse;
+    
+
+}
+
+.customizable-form-container-table thead th{
+    height: 40px;
+    font-size: x-large;
+    background: var(--background-card, linear-gradient(180deg, #415160 0%, #293440 100%));
+    color: #5DD3B3;
+}
+
+.customizable-form-container-table tr td {
+    height: 40px;
+    text-align: center;
+    font-size: x-large;
+    border: 1px solid lightgray;
+    
+}
+
+.customizable-form-container-table tr:nth-child(2n){
+    background-color: #526d89;
+}
+.customizable-form-container-table tr:nth-child(2n+1){
+    background-color: #3f4851;
+}
+
+.customizable-form-container-table tr td input{
+    width: 95%;
+    border: transparent;
+    outline: none;
+    height: 95%;
+    text-align: center;
+    font-size: large;
+    background-color: transparent;
+    color: #5DD3B3;
+}
+
+.customizable-form-container-table tr td select{
+    width: 95%;
+    height: 95%;
+    border: transparent;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    background-color: transparent;
+    color: #5DD3B3;
+}
+
+.customizable-form-container-bottom{
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.customizable-form-container-bottom form button{
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    border: transparent;
+}
+
+.customizable-form-container-bottom form:nth-child(1) button{
+    background-color: green;
+    cursor: pointer;
+}
+.customizable-form-container-bottom form:nth-child(2) button{
+    background-color: red;
+    cursor: pointer;
+}
+.customizable-form-container-bottom form:nth-child(3) button{
+    background-color: rgb(70, 241, 207);
+    cursor: pointer;
+}
+
+.customizable-form-container-bottom form button:active{
+    scale: 1.1;
+}
+
+.admin-request-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.admin-request-form-container{
+    display: grid;
+    width: 80%;
+    font-size: x-large;
+}
+
+.admin-request-form-container input{
+    font-size: large;
+    outline: none;
+    padding: 10px;
+}
+
+.admin-request-form-btn{
+    padding: 10px;
+    margin-left: 20px;
+    background-color: green;
+    opacity: 0.7 !important;
+    color: white;
+    border: transparent;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: larger;
+}
+
+@media screen and (max-width:750px){
+    .admin-request-form{
+        grid-template-columns: 1fr;
+    }
+    .admin-request-form-container{
+        width: 100%;
+    }
+    .admin-request-form-btn{
+      margin-left: 120px;
+    }
+    .customizable-form-container-bottom{
+        gap: 20px;
+    }
+    .customizable-form-container-bottom form button{
+        font-size: medium;
+    }
+    .customizable-form-container-table thead th{
+        font-size: large;
+    }
+    .customizable-form-container-table tr td{
+        font-size: large;
+    }
+    .customizable-form-container-table tr td input{
+        font-size: medium;
+    }
+    .customizable-form-container-table tr td select{
+        font-size: medium;
+    }
+}

@@ -1,0 +1,143 @@
+
+.firstnametext ,.lastnametext, .messagetext, .emailtext, .subjecttext{
+      width: 95%;
+  margin: 10px 0;
+  padding: 15px 10px;
+  border-radius: 6px;
+  border: 0.5px solid rgba(255, 255, 255, 0.564);
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #5dd3b3;
+  font-family: 'CORE';
+}
+
+
+/* .fistnametext.lastnametext.messagetext.emailtext.subjecttext{
+     width: 100%;
+  margin: 10px 0;
+  padding: 15px 10px;
+  border-radius: 6px;
+  border: 0.5px solid rgba(255, 255, 255, 0.564);
+  background-color: transparent;
+} */
+.about-us{
+  font-family: 'CORE';
+ width: 100%
+}
+
+.aboutuscontainer{
+      padding-left: 15px;
+  padding-right: 15px; 
+    margin-left: auto;
+   margin-right: auto;
+}
+.aboutwrapper{
+      background-color: #2d3741;
+  padding: 25px;
+  color: #eee;
+  
+}
+.aboutwrapper .about-usContent .aboutinfo{
+     padding: 15px;
+  border-radius: 15px;
+  background: linear-gradient(202deg, #2d3741, #ffffff52);
+}
+.aboutwrapper .about-usContent .aboutinfo h1{
+      margin-bottom: 10px;
+
+}
+.aboutwrapper .contact-us{
+      margin-top: 10px;
+
+}
+.contactform{
+     padding: 25px;
+  background: linear-gradient(18deg,  #2d3741, #ffffff52);
+    border-radius: 15px;
+
+}
+.contact-submit-btn{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-submit-btn .contact-submit{
+       padding: 7px 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #5dd3b3;
+    color: #eee;
+    cursor: pointer;
+      font-size: 14px;
+
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .aboutuscontainer {
+    width: 750px;
+  }
+  .contact-submit-btn{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-submit-btn .contact-submit{
+    width: 25%;
+       padding: 7px 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #5dd3b3;
+    color: #eee;
+    cursor: pointer;
+}
+
+}
+
+/* medium */
+@media (min-width: 992px) {
+  .aboutuscontainer {
+    width: 970px;
+  }
+  .contact-submit-btn{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-submit-btn .contact-submit{
+       padding: 7px 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #5dd3b3;
+    color: #eee;
+    cursor: pointer;
+}
+
+}
+
+/* large */
+@media (min-width: 1200px) {
+  .aboutuscontainer {
+    width: 1170px;
+  }
+  .contact-submit-btn{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-submit-btn .contact-submit{
+       padding: 7px 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #5dd3b3;
+    color: #eee;
+    cursor: pointer;
+}
+
+}
+

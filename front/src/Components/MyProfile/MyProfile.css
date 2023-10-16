@@ -1,0 +1,87 @@
+.MyProfile-parent{
+    background-color: #2D3741;
+    min-height: 100vh;
+    font-family: "CORE-BOLD";
+}
+.MyProfile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.circle-pic{
+    border-radius: 50%;
+    width:150px;
+    height: 160px;
+    border:3px solid #5DD3B3;
+}
+.MyProfile-headers{
+    color:#E1E0E4;
+    text-align: center;
+}
+.certificatestatistic-content{
+    display: flex;
+    padding: 10px;   
+}
+.firstcertificatestatistic,.secondcertificatestatistic{
+    background-color: white;
+   margin-right: 40px;
+   padding: 20px;
+   height: fit-content;
+   width: 160px;
+   border-bottom:5px solid #5DD3B3 ;
+   border-top-left-radius:3px ;
+   border-top-right-radius:3px ;
+}
+.thirdcertificatestatistic{
+    background-color: white;
+    padding: 20px;
+    border-bottom:5px solid #5DD3B3 ;
+    width: 160px;
+    border-top-left-radius:3px ;
+    border-top-right-radius:3px ;
+}
+.MyProfile-edit{
+    margin-top: 20px;
+    background-color: #5DD3B3;
+    border: transparent;
+    border-radius: 3px;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    text-align: center;
+}
+.colorspan{
+    color: #5DD3B3;
+}
+.myprofileicon{
+color:#5DD3B3;
+font-size: 30px;
+margin-right:5px ;
+}
+.iconwithnumber{
+   display: flex;
+   align-items: center;
+}
+
+
+
+@media (max-width:650px) {
+    .certificatestatistic-content{
+        display: flex;
+       flex-direction: column;
+       padding: 10px;
+    }
+    .firstcertificatestatistic,.secondcertificatestatistic,.thirdcertificatestatistic{
+        width: 200px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+     }
+     .MyProfile-edit{
+        width:60%;
+        margin-bottom: 10px;
+    }
+   
+       }

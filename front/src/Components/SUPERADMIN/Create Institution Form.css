@@ -1,0 +1,92 @@
+.create-institution-container{
+    
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-area: main;
+ background-color:#2D3741; 
+}
+.create-institution-container form{
+    background-color:#3a424a;
+    height: fit-content;
+    width: 500px;    
+    margin: 10px;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.create-institution-container form .create-institution-container-form-container label{
+    font-size: larger;
+    text-align: start;
+    color:#5DD3B3;
+}
+.createinstitutionh1{
+    color:#5DD3B3;
+}
+
+.create-institution-container form .create-institution-container-form-container input{
+    font-size: larger;
+    border: 1px solid #ddd;
+    background-color:#2D3741;
+    border-radius: 1.5635rem;
+    height: 30px;
+    padding: 10px;
+    outline:none;
+    color:rgb(203, 195, 195);
+    margin: 4px;
+    
+}
+.create-institution-container form .create-institution-container-form-container input::placeholder{
+    color:rgb(151, 151, 151);
+    padding-left:10px ;
+}
+
+.create-institution-container form button{
+    margin-top: 30px;
+    background-color: #5DD3B3;
+    border: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    width: 150px;
+}
+
+.create-institution-container form button:active{
+    transform: scale(0.9);
+}
+
+.error-message{
+    color: red;
+    font-size: large;
+}
+.create-institution-container-form-container{
+    display: grid;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:650px) {
+    
+    .create-institution-container form{
+        width: 250px;    
+        margin: 0px;
+        margin-top: 80px;
+        padding: 20px;
+    }
+    .createinstitutionh1{
+font-size: 25px;
+    }
+    .create-institution-container form .create-institution-container-form-container input{
+        height: 20px;
+        padding: 8px;
+        margin: 0px;
+        margin-top: 4px;
+    }
+    .create-institution-container form .create-institution-container-form-container label{
+        font-size: 15px;
+    }
+       }
